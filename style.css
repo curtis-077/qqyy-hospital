@@ -1,4 +1,4 @@
-/* ===== 鍩虹閲嶇疆 & 鍙橀噺 ===== */
+/* ===== 基础重置 & 变量 ===== */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===== 椤堕儴瀵艰埅 ===== */
+/* ===== 顶部导航 ===== */
 .header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -89,7 +89,7 @@ body {
     border-radius: 20px;
 }
 
-/* ===== 杩介棶鍗＄墖 ===== */
+/* ===== 追问卡片 ===== */
 .followup-card {
     background: #fffbeb;
     border: 2px solid #fcd34d;
@@ -134,7 +134,7 @@ body {
     font-style: italic;
 }
 
-/* 淇℃伅鏀堕泦杩涘害鏉?*/
+/* 信息收集进度条 */
 .info-progress {
     display: flex;
     align-items: center;
@@ -155,7 +155,7 @@ body {
     background: var(--success);
 }
 
-/* 宸叉敹闆嗕俊鎭憳瑕?*/
+/* 已收集信息摘要 */
 .collected-info {
     background: #f0fdf4;
     border: 1px solid #bbf7d0;
@@ -185,7 +185,7 @@ body {
     font-weight: 600;
 }
 
-/* ===== 涓讳綋 ===== */
+/* ===== 主体 ===== */
 .main-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -197,7 +197,7 @@ body {
     min-height: 0;
 }
 
-/* ===== 闂瘖闈㈡澘 ===== */
+/* ===== 问诊面板 ===== */
 .consultation-panel {
     background: var(--surface);
     border-radius: var(--radius-lg);
@@ -243,7 +243,7 @@ body {
     margin-top: 2px;
 }
 
-/* ===== 瀵硅瘽鍖?===== */
+/* ===== 对话区 ===== */
 .chat-area {
     flex: 1;
     overflow-y: auto;
@@ -267,7 +267,7 @@ body {
     border-radius: 3px;
 }
 
-/* 娑堟伅姘旀场 */
+/* 消息气泡 */
 .message {
     display: flex;
     gap: 10px;
@@ -340,7 +340,7 @@ body {
     font-size: 14px;
 }
 
-/* 鐥呭巻鍗＄墖 in chat */
+/* 病历卡片 in chat */
 .record-inline {
     background: var(--surface) !important;
     border: 2px solid var(--primary-light) !important;
@@ -388,7 +388,7 @@ body {
     font-weight: 500;
 }
 
-/* 绉戝鎺ㄨ崘鍗＄墖 in chat */
+/* 科室推荐卡片 in chat */
 .dept-inline {
     background: linear-gradient(135deg, #ecfdf5, #f0fdf4) !important;
     border: 2px solid #a7f3d0 !important;
@@ -406,7 +406,7 @@ body {
     margin-top: 4px;
 }
 
-/* 姝ラ鍒楄〃 in chat */
+/* 步骤列表 in chat */
 .steps-inline {
     margin-top: 8px;
 }
@@ -433,7 +433,7 @@ body {
     flex-shrink: 0;
 }
 
-/* 鍔犺浇鍔ㄧ敾 */
+/* 加载动画 */
 .typing-indicator {
     display: flex;
     gap: 4px;
@@ -456,7 +456,7 @@ body {
     30% { transform: translateY(-6px); opacity: 1; }
 }
 
-/* ===== 杈撳叆鍖?===== */
+/* ===== 输入区 ===== */
 .input-area {
     border-top: 1px solid var(--border);
     padding: 16px 24px;
@@ -568,7 +568,7 @@ body {
     text-align: right;
 }
 
-/* ===== 鍙充晶闈㈡澘 ===== */
+/* ===== 右侧面板 ===== */
 .record-panel {
     background: var(--surface);
     border-radius: var(--radius-lg);
@@ -638,7 +638,7 @@ body {
     font-size: 14px;
 }
 
-/* 鐥呭巻鍗″唴瀹?*/
+/* 病历卡内容 */
 .record-filled h3 {
     font-size: 12px;
     text-transform: uppercase;
@@ -788,7 +788,7 @@ body {
     background: var(--border-light);
 }
 
-/* ===== 椤佃剼 ===== */
+/* ===== 页脚 ===== */
 .footer {
     text-align: center;
     padding: 16px 24px;
@@ -802,7 +802,7 @@ body {
     color: var(--danger);
 }
 
-/* ===== 鍝嶅簲寮?===== */
+/* ===== 响应式 ===== */
 @media (max-width: 1024px) {
     .main-container {
         grid-template-columns: 1fr;
@@ -846,7 +846,7 @@ body {
     }
 }
 
-/* 鎵撳嵃鏍峰紡 */
+/* 打印样式 */
 @media print {
     .header, .footer, .input-area, .consultation-panel,
     .action-buttons, .empty-state, .badge {
