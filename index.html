@@ -3,104 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鏅鸿兘闂瘖绯荤粺 鈥?涓冧竷鍖婚櫌</title>
+    <title>智能问诊系统 — 七七医院</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 椤堕儴瀵艰埅 -->
+    <!-- 顶部导航 -->
     <header class="header">
         <div class="header-inner">
             <div class="logo">
-                <span class="logo-icon">馃彞</span>
-                <span class="logo-text">涓冧竷鍖婚櫌 路 鏅鸿兘棰勮瘖</span>
+                <span class="logo-icon">🏥</span>
+                <span class="logo-text">七七医院 · 智能预诊</span>
             </div>
-            <div class="header-tagline">AI 杈呭姪棰勮瘖 路 浠呬緵鍙傝€冿紝涓嶈兘鏇夸唬涓撲笟鍖荤敓璇婃柇</div>
+            <div class="header-tagline">AI 辅助预诊 · 仅供参考，不能替代专业医生诊断</div>
         </div>
     </header>
 
-    <!-- 涓讳綋 -->
+    <!-- 主体 -->
     <main class="main-container">
-        <!-- 宸︿晶锛氶棶璇婂璇濆尯 -->
+        <!-- 左侧：问诊对话区 -->
         <section class="consultation-panel">
             <div class="panel-header">
-                <div class="doctor-avatar">馃懆鈥嶁殨锔?/div>
+                <div class="doctor-avatar">👨‍⚕️</div>
                 <div class="doctor-info">
-                    <h2>AI 棰勮瘖鍔╂墜</h2>
-                    <p>璇锋弿杩版偍鐨勭棁鐘讹紝鍥炵瓟瓒婅缁嗭紝鍒ゆ柇瓒婂噯纭?/p>
+                    <h2>AI 预诊助手</h2>
+                    <p>请描述您的症状，回答越详细，判断越准确</p>
                 </div>
             </div>
 
-            <!-- 瀵硅瘽娑堟伅鍖?-->
+            <!-- 对话消息区 -->
             <div class="chat-area" id="chatArea">
                 <div class="message bot">
-                    <div class="message-avatar">馃懆鈥嶁殨锔?/div>
+                    <div class="message-avatar">👨‍⚕️</div>
                     <div class="message-bubble">
-                        <p>鎮ㄥソ锛屾垜鏄竷涓冨尰闄㈢殑 AI 棰勮瘖鍔╂墜銆傝鎮ㄨ缁嗘弿杩颁竴涓?strong>鍝噷涓嶈垝鏈?/strong>锛屼緥濡傦細</p>
+                        <p>您好，我是七七医院的 AI 预诊助手。请您详细描述一下<strong>哪里不舒服</strong>，例如：</p>
                         <ul>
-                            <li><strong>鍝釜閮ㄤ綅</strong>涓嶈垝鏈嶏紵锛堝锛氫笂鑵广€佸彸涓嬭吂銆佽兏鍙ｃ€佸悗鑴戝嫼鈥︼級</li>
-                            <li><strong>鎬庢牱鐨勬劅瑙?/strong>锛燂紙濡傦細閽濈棝銆佺粸鐥涖€佺伡鐑ф劅銆佽儉鐥涒€︼級</li>
-                            <li><strong>浠庝粈涔堟椂鍊欏紑濮?/strong>鐨勶紵鎸佺画澶氫箙浜嗭紵</li>
-                            <li><strong>鏈夋病鏈夊叾浠栫棁鐘?/strong>锛燂紙濡傦細鎭跺績銆佸彂鐑с€佸ご鏅曗€︼級</li>
-                            <li><strong>浠€涔堟儏鍐典笅鍔犻噸鎴栫紦瑙?/strong>锛熶互鍓嶆湁杩囧悧锛?/li>
+                            <li><strong>哪个部位</strong>不舒服？（如：上腹、右下腹、胸口、后脑勺…）</li>
+                            <li><strong>怎样的感觉</strong>？（如：钝痛、绞痛、灼烧感、胀痛…）</li>
+                            <li><strong>从什么时候开始</strong>的？持续多久了？</li>
+                            <li><strong>有没有其他症状</strong>？（如：恶心、发烧、头晕…）</li>
+                            <li><strong>什么情况下加重或缓解</strong>？以前有过吗？</li>
                         </ul>
-                        <p style="margin-top:8px;font-size:13px;color:#64748b;">馃挕 鎻忚堪瓒婅缁嗭紝鍒ゆ柇瓒婂噯纭€傛偍涔熷彲浠ョ洿鎺ラ€夋嫨涓嬫柟鐨勫父瑙佺棁鐘跺揩閫熷紑濮嬨€?/p>
+                        <p style="margin-top:8px;font-size:13px;color:#64748b;">💡 描述越详细，判断越准确。您也可以直接选择下方的常见症状快速开始。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 杈撳叆鍖?-->
+            <!-- 输入区 -->
             <div class="input-area">
                 <div class="quick-tags" id="quickTags">
-                    <span class="tag-label">甯歌鐥囩姸锛?/span>
-                    <button class="tag" data-symptom="澶寸棝鍙戠儹锛屽叏韬棤鍔?>馃 澶寸棝鍙戠儹</button>
-                    <button class="tag" data-symptom="鑲氬瓙鐤硷紝鎭跺績鎯冲悙">馃あ 鑵圭棝鎭跺績</button>
-                    <button class="tag" data-symptom="鑳搁椃锛屽績璺冲揩锛屽枠涓嶄笂姘?>馃珌 鑳搁椃姘旂煭</button>
-                    <button class="tag" data-symptom="鑶濈洊鐤硷紝璧拌矾鏃跺姞閲?>馃Υ 鍏宠妭鐤肩棝</button>
-                    <button class="tag" data-symptom="鐨偆鐥掞紝璧风孩鐤瑰瓙">馃┕ 鐨偆绾㈢柟</button>
+                    <span class="tag-label">常见症状：</span>
+                    <button class="tag" data-symptom="头痛发热，全身无力">🤒 头痛发热</button>
+                    <button class="tag" data-symptom="肚子疼，恶心想吐">🤢 腹痛恶心</button>
+                    <button class="tag" data-symptom="胸闷，心跳快，喘不上气">🫁 胸闷气短</button>
+                    <button class="tag" data-symptom="膝盖疼，走路时加重">🦴 关节疼痛</button>
+                    <button class="tag" data-symptom="皮肤痒，起红疹子">🩹 皮肤红疹</button>
                 </div>
                 <div class="input-row">
-                    <textarea id="userInput" placeholder="璇峰湪姝ゆ弿杩版偍鐨勭棁鐘讹紝瓒婅缁嗚秺濂解€︹€? rows="3"></textarea>
-                    <button class="btn-send" id="btnSend" title="鍙戦€?>
-                        <span class="send-icon">鉃?/span>
+                    <textarea id="userInput" placeholder="请在此描述您的症状，越详细越好……" rows="3"></textarea>
+                    <button class="btn-send" id="btnSend" title="发送">
+                        <span class="send-icon">➤</span>
                     </button>
                 </div>
-                <div class="input-hint">鎸?Enter 鍙戦€侊紝Shift+Enter 鎹㈣</div>
+                <div class="input-hint">按 Enter 发送，Shift+Enter 换行</div>
             </div>
         </section>
 
-        <!-- 鍙充晶锛氱梾鍘?& 寤鸿闈㈡澘 -->
+        <!-- 右侧：病历 & 建议面板 -->
         <aside class="record-panel" id="recordPanel">
             <div class="panel-header record-header">
-                <h2>馃搵 鐥呭巻涓庡缓璁?/h2>
-                <span class="badge" id="recordStatus">绛夊緟闂瘖</span>
+                <h2>📋 病历与建议</h2>
+                <span class="badge" id="recordStatus">等待问诊</span>
             </div>
 
             <div class="record-card" id="recordCard">
                 <div class="empty-state">
-                    <div class="empty-icon">馃摑</div>
-                    <p>瀹屾垚闂瘖鍚庯紝鐥呭巻涓庡氨鍖诲缓璁皢鏄剧ず鍦ㄨ繖閲?/p>
+                    <div class="empty-icon">📝</div>
+                    <p>完成问诊后，病历与就医建议将显示在这里</p>
                 </div>
             </div>
 
             <div class="dept-card" id="deptCard" style="display:none;">
-                <h3>馃彞 鎺ㄨ崘绉戝</h3>
+                <h3>🏥 推荐科室</h3>
                 <div class="dept-content" id="deptContent"></div>
             </div>
 
             <div class="next-steps" id="nextSteps" style="display:none;">
-                <h3>馃搶 涓嬩竴姝ュ缓璁?/h3>
+                <h3>📌 下一步建议</h3>
                 <ol class="steps-list" id="stepsList"></ol>
             </div>
 
             <div class="action-buttons" id="actionButtons" style="display:none;">
-                <button class="btn-secondary" id="btnPrint">馃枿锔?鎵撳嵃鐥呭巻</button>
-                <button class="btn-primary" id="btnNew">馃攧 閲嶆柊闂瘖</button>
+                <button class="btn-secondary" id="btnPrint">🖨️ 打印病历</button>
+                <button class="btn-primary" id="btnNew">🔄 重新问诊</button>
             </div>
         </aside>
     </main>
 
     <footer class="footer">
-        <p>鈿狅笍 <strong>鍏嶈矗澹版槑锛?/strong>鏈郴缁熶粎涓?AI 杈呭姪棰勮瘖宸ュ叿锛屽垎鏋愮粨鏋滀粎渚涘弬鑰冿紝涓嶈兘鏇夸唬涓撲笟鍖荤敓鐨勮瘖鏂拰娌荤枟銆傚閬囩揣鎬ユ儏鍐碉紝璇风珛鍗虫嫧鎵?120 鎴栧墠寰€鏈€杩戠殑鎬ヨ瘖绉戙€?/p>
+        <p>⚠️ <strong>免责声明：</strong>本系统仅为 AI 辅助预诊工具，分析结果仅供参考，不能替代专业医生的诊断和治疗。如遇紧急情况，请立即拨打 120 或前往最近的急诊科。</p>
     </footer>
 
     <script src="script.js"></script>
